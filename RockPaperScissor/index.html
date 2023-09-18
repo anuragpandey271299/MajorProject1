@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="title">
+                rock <br> paper <br> scissor
+            </div>
+            <div class="computerScore">
+                <h6>computer score</h6>
+                <p id="computerScore">0</p>
+            </div>
+            <div class="yourScore">
+                <h6>your score</h6>
+                <p id="userScore">0</p>
+            </div>
+        </div>
+        <div class="lines">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div>
+        <div class="images">
+            <div class="rock" onclick="pickHand('rock')">
+                <img src="stone.png"  alt="rock-image">
+            </div>
+            <div class="scissor" onclick="pickHand('scissor')">
+                <img src="scissor.png"  alt="scissor-image">
+            </div>
+            <div class="paper" onclick="pickHand('paper')">
+                <img src="paper.png"  alt="paper-image">
+            </div>
+        </div>
+        <div class="buttons">
+        <button id="button1" onclick="displayRules()">rules</button>
+        <button id="button2" onclick="hurrayPage()">next</button>
+        </div>
+        <div class="resultArea">
+            <div class="userPick">
+                <h1>you picked</h1>
+
+            </div>
+            <div class="playAgain">
+                <h1 id="output">hello</h1>
+                <button onclick="playAgain()">play again</button>
+            </div>
+            <div class="computerPick">
+                <h1>pc picked</h1>
+               
+            </div>
+        </div>
+        <div class="celebrate">
+            <img src="starImages.png" alt="star-image" id="star">
+            <h1>hurray!!</h1>
+            <h5>you won the game</h5>
+            <button onclick="newGame()">play again</button>
+        </div>
+        
+        <div class="rulebox">
+            <div class="rulePoints">
+                <h3>game rule</h3>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li> <br>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li> <br>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li> <br>
+                    <li>If both players lay down the same hand, each player lays down another hand</li><br>
+                </ul>
+            </div>
+            <div class="close" onclick="closeRules()">
+                <h1>x</h1></div>
+            </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
